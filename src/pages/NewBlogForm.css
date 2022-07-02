@@ -1,0 +1,15 @@
+.new-blog-page {
+  background-color: rgb(254, 221, 145);
+  padding: 40px;
+}
+
+@media screen and (min-width: 900px) {
+  .new-blog-page {
+    padding: 60px 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .new-blog-page {
+    padding: 60px 200px;
+  }
+}

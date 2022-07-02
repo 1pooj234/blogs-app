@@ -1,0 +1,61 @@
+.text__area__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+
+  font-weight: 600;
+  color: rgb(166, 34, 255);
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(-36rem);
+}
+
+.form__heading {
+  margin-bottom: 40px;
+}
+
+.body__box {
+  margin: 40px 0 40px 0;
+}
+
+.text__area {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1rem;
+
+  padding: 15px 2px 15px 15px;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.text__area:placeholder-shown + .text__area__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-35rem);
+  transform: translateY(-35rem);
+}
+
+@media screen and (min-width: 600px) {
+  .form__input {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .form__heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .form__heading {
+    font-size: 20px;
+  }
+}

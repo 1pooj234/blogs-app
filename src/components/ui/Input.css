@@ -1,0 +1,68 @@
+.form__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(166, 34, 255);
+  letter-spacing: 01px;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(-5.5rem);
+}
+
+.form__input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  padding: 15px 2px 15px 15px;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
+}
+
+.form__label__user {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(82, 159, 237);
+  letter-spacing: 01px;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(-6rem);
+}
+
+.form__input__user {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1rem;
+  padding: 14px;
+  border-radius: 2px;
+  background-color: rgb(245, 227, 227);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input__user:placeholder-shown + .form__label__user {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-3rem);
+  transform: translateY(-3rem);
+}

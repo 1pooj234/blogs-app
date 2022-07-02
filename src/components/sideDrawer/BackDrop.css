@@ -1,0 +1,15 @@
+.back_drop {
+  position: fixed;
+  top: 0;
+  margin-left: -40px;
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 700px) {
+  .back_drop {
+    display: none;
+  }
+}

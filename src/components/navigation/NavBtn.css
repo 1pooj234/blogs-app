@@ -1,0 +1,44 @@
+.box1 {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.b1,
+.b2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b1 {
+  color: rgb(245, 35, 126);
+  background-color: yellow;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  transform: translateY(0);
+  transition: all ease-in-out 0.5s;
+}
+
+.b2 {
+  background-color: rgb(94, 243, 89);
+  color: darkblue;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+
+  transform: translateY(-40px);
+  transition: all ease-in-out 0.5s;
+}
+
+.box1:hover .b1 {
+  transform: translateY(40px);
+}
+
+.box1:hover .b2 {
+  transform: translateY(0px);
+}
