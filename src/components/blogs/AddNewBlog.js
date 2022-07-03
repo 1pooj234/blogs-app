@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./AddNewBlog.css";
 import Button from "../ui/Button";
 import Loading from "../ui/Loading";
@@ -77,7 +78,6 @@ const AddNewblog = (props) => {
         }}
         label="Title"
       />
-
       {!formIsValid.title && (
         <p className="error__text">enter a title of length 10</p>
       )}
@@ -88,7 +88,6 @@ const AddNewblog = (props) => {
           <p className="error__text">enter a body of length 500</p>
         )}
       </div>
-
       <Input
         ref={imageRef}
         input={{
@@ -102,6 +101,11 @@ const AddNewblog = (props) => {
         <p className="error__text">enter valid image url</p>
       )}
       <Button label="Add blog" className="btn1" />
+      <div>
+        <NavLink to="/blogs">
+          <button className="back_btn">Back</button>
+        </NavLink>
+      </div>
     </form>
   );
 };

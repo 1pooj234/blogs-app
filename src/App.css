@@ -17,3 +17,18 @@ body {
   font-size: 12px;
   margin-top: -20px;
 }
+
+.back_btn {
+  font-weight: bold;
+  padding: 5px 20px;
+  color: springgreen;
+  border: 2px double greenyellow;
+  border-radius: 10px;
+  background-color: rgb(15, 38, 80);
+  margin: 10px 0 20px 0;
+}
+.back_btn:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}

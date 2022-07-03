@@ -8,7 +8,7 @@ export const bodyInputValidity = (value) => {
   return value.trim().length > 500;
 };
 export const titleInputValidity = (value) => {
-  return value.trim().length > 20 || value.length > 10;
+  return value.trim().length >= 10;
 };
 export const commentInputValidity = (value) => {
   return value.trim().length > 0;
