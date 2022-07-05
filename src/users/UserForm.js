@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { useContext, useState, useRef, useEffect } from "react";
 import { AuthCtx } from "../context/AuthContext";
 import "./UserForm.css";
@@ -125,6 +125,11 @@ const UserForm = () => {
           label={`${loginMode ? "Switch to Sign up" : "Switch to Sign in"}`}
           click={switchToSignup}
         />
+      </div>
+      <div>
+        <NavLink to="/blogs">
+          <button className="back_btn">Back</button>
+        </NavLink>
       </div>
     </section>
   );
