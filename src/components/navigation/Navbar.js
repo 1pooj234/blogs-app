@@ -20,23 +20,25 @@ const NavBar = (props) => {
     <Fragment>
       <nav className="nav__bar">
         <div>
-          <img id="logo" />
+          <NavLink to="/blogs">
+            <img id="logo" />
+          </NavLink>
         </div>
         <div className="navlinks__button">
           <div className="nav__links__section mobile__view">
-            <div className="link__box">
-              <NavLink className="navbar__links" to="/blogs">
-                Blogs
-              </NavLink>
-              <div className="move__hover"></div>
-            </div>
-            {ctx.isLoggedIn && (
+            <NavLink className="navbar__links" to="/blogs">
               <div className="link__box">
-                <NavLink className="navbar__links" to="/blogs/nblog">
-                  New Blog
-                </NavLink>
+                Blogs
                 <div className="move__hover"></div>
               </div>
+            </NavLink>
+            {ctx.isLoggedIn && (
+              <NavLink className="navbar__links" to="/blogs/nblog">
+                <div className="link__box">
+                  New Blog
+                  <div className="move__hover"></div>
+                </div>
+              </NavLink>
             )}
           </div>
         </div>

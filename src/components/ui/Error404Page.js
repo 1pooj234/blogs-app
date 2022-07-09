@@ -6,7 +6,7 @@ const Error404Page = () => {
       <b className="text404">Page Not Found</b>
 
       <NavLink className="nav__link" to="/blogs">
-        Back
+        <button className="back_btn">Back</button>
       </NavLink>
     </div>
   );
